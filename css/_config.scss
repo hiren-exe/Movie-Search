@@ -1,0 +1,15 @@
+$primary-color: #fff;
+$secondary-color: rgb(143, 30, 30);
+$black-color: rgb(0, 0, 0);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  outline: none;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Movie</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="app-details">
+      <h1>Search details for your favorite movie</h1>
+      <span
+        >(Press the button and say the name of the movie you are looking
+        for)</span
+      >
+      <button id="movie-btn">Movie <i class="fa fa-microphone"></i></button>
+    </div>
+    <main>
+      <h2>MOVIE DETAILS</h2>
+      <div class="movie-details">
+        <div class="movie-img-container">
+          <h3>Title:<span id="title"></span></h3>
+          <div class="details">
+            <div class="detail-fields">
+              <p>Release date:</p>
+              <span id="release-date"></span>
+            </div>
+            <div class="detail-fields">
+              <p>Time:</p>
+              <span id="time"></span>
+            </div>
+            <div class="detail-fields">
+              <p>Director:</p>
+              <span id="director"></span>
+            </div>
+          </div>
+        </div>
+        <div class="genre">
+          <p>Genre</p>
+          <div class="genre-categories"></div>
+        </div>
+        <div class="actors">
+          <p>Actors</p>
+          <div class="actors-names"></div>
+        </div>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <span>IMDB Rating</span>
+          <p id="rating"></p>
+        </div>
+        <div class="plot">
+          <span>Plot</span>
+          <p id="plot"></p>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  outline: none;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.app-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 350px;
+  background: url("../main.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding-bottom: 0.5em;
+  overflow: hidden;
+}
+
+.app-details h1 {
+  text-align: center;
+  line-height: 0.8;
+}
+
+.app-details span {
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+.app-details button {
+  border: none;
+  font-size: 25px;
+  margin-top: 0.5em;
+  padding: 0.3em;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #8f1e1e;
+  color: #fff;
+}
+
+.app-details button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+main {
+  overflow: hidden;
+}
+
+main h2 {
+  text-align: center;
+  padding-top: 1em;
+  color: #8f1e1e;
+}
+
+.movie-details {
+  display: none;
+  opacity: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 1em;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.movie-details.showMovie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+}
+
+.movie-img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  padding: 0 1em;
+}
+
+.movie-img-container h3 {
+  font-size: 20px;
+  color: black;
+}
+
+.movie-img-container h3 span {
+  padding-left: 0.5em;
+}
+
+.details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: black 1px solid;
+}
+
+.detail-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.5em;
+}
+
+.detail-fields p {
+  color: black;
+  padding-bottom: 0.5em;
+  border-bottom: #8f1e1e 2px solid;
+  line-height: 0.9;
+}
+
+.detail-fields span {
+  color: black;
+  margin-top: 0.5em;
+  line-height: 0.9;
+}
+
+.genre,
+.actors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1em;
+}
+
+.genre p,
+.actors p {
+  color: black;
+  margin-top: 1em;
+  padding-bottom: 0.5em;
+  border-bottom: #8f1e1e 2px solid;
+}
+
+.genre-categories,
+.actors-names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 1em;
+  padding: 0 1em;
+}
+
+.genre-categories span,
+.actors-names span {
+  color: #fff;
+  background-color: black;
+  opacity: 0.95;
+  margin-right: 0.2em;
+  padding: 0.3em;
+  border: black 1px solid;
+  border-radius: 5px;
+}
+
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2em;
+}
+
+.rating i {
+  color: #8f1e1e;
+  font-size: 40px;
+}
+
+.rating span,
+.rating p {
+  color: black;
+  margin-top: 0.5em;
+}
+
+.plot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 1em;
+  background-color: black;
+  margin-top: 0.5em;
+}
+
+.plot span {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+  padding-bottom: 0.5em;
+  border-bottom: #8f1e1e 2px solid;
+}
+
+.plot p {
+  color: #fff;
+  font-size: 20px;
+  padding-top: 0.5em;
+}
+/*# sourceMappingURL=style.css.map */
